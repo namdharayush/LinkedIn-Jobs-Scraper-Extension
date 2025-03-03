@@ -1,0 +1,28 @@
+{
+    "name": "LinkedIn Jobs Scraper",
+    "description": "LinkedIn Scraper is a powerful job scraping tool designed for job seekers and recruiters. With just one click, extract job listings from LinkedIn, including job title, description, apply link, published date, recruiter name, and profile link. Easily export the collected data to a CSV file for seamless analysis and tracking.",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
